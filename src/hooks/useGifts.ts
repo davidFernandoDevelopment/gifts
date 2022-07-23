@@ -9,7 +9,6 @@ interface GiftsResponse {
 
 
 export const useGifts = (category: string): GiftsResponse => {
-    console.log('useGifts');
     const [gifs, setGifs] = useState<Gift[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
