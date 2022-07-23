@@ -4,7 +4,7 @@ interface Props {
     title: string;
 }
 
-const Card = ({ title, url }: Props) => {
+export const Card = ({ title, url }: Props) => {
     return (
         <div className='card'>
             <img src={url} alt={title} />

@@ -1,8 +1,5 @@
 import { useState } from 'react';
-import CardList from './components/CardList';
-
-import Card from './components/CardList';
-import AddCategory from './components/Input';
+import { Input, CardList } from './components';
 
 const App = () => {
 
@@ -17,8 +14,8 @@ const App = () => {
 
   return (
     <>
-      <div>App</div>
-      <AddCategory onValue={addCategory} />
+      <h3 className='title'>Buscador de gifs</h3>
+      <Input onValue={addCategory} />
       {
         categories.map(category => (
           <CardList key={category} category={category} />

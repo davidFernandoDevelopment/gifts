@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, Dispatch, SetStateAction, useState } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 
 
 interface Props {
@@ -6,7 +6,7 @@ interface Props {
 }
 
 
-const Input = ({ onValue }: Props) => {
+export const Input = ({ onValue }: Props) => {
     const [value, setValue] = useState<string>('');
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {

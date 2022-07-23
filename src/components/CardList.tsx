@@ -5,7 +5,7 @@ interface Props {
     category: string;
 }
 
-const CardList = ({ category }: Props) => {
+export const CardList = ({ category }: Props) => {
 
     const { gifs, isLoading } = useGifts(category);
 
