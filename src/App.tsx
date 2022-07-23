@@ -8,6 +8,7 @@ const App = () => {
   const addCategory = (category: string) => {
     if (categories.includes(category)) return;
     setCategories([
+      ...categories,
       category
     ]);
   };

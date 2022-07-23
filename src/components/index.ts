@@ -1,3 +1,3 @@
-export * from './Card';
-export * from './Input';
-export * from './CardList';
+export * from './Card/Card';
+export * from './Input/Input';
+export * from './CardList/CardList';
